@@ -21,7 +21,7 @@ h2 {
 
 h4 {
   font-size: 20px;
-  line-height: 64px;
+  /* line-height: 64px; */
   color: #222222;
 }
 
@@ -159,6 +159,7 @@ body {
 .fe-box:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+  color: #088178;
 }
 
 .fe-box__img {
@@ -192,4 +193,80 @@ body {
 
 .fe-box:nth-child(6) .fe-box__title {
   background-color: #fff2e5;
+}
+
+.product {
+  text-align: center;
+}
+
+.product__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.product__card {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  margin: 15px 0;
+  border-radius: 20px;
+  border: 1px solid #cce7d0;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.product__card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.1);
+}
+
+.product__card-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card__info {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.card__info-brand {
+  font-size: 12px;
+  color: #606063;
+}
+
+.card__info-model {
+  padding-top: 7px;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.fa-star {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+.card__info-price {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+.cart-btm {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
 }
